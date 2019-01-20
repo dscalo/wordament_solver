@@ -36,9 +36,6 @@ const WordBoxContainer = styled.div`
 const H1 = styled.h1`
   margin-left: 10px;
 `
-const TEMP = styled.div`
-  margin: 100px 0 0 300px;
-`
 
 const WordApp = () => {
   const [state, dispatch] = useReducer(reducer, initState)
