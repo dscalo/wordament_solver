@@ -10,7 +10,7 @@ const Container = styled.div`
 `
 
 const Tile = styled.div`
-  flex: 1 0  21%;
+  flex: 1 0 15%;
   border: 0.02px black solid;
   background-color: ${props => props.display ? 'red' : '#FFF'};
 `

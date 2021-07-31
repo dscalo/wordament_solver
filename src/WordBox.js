@@ -37,7 +37,7 @@ const Button = styled.button`
 `
 
 const onlyLetters = str => str.replace(/[^a-zA-Z\-/]/g, '')
-const maxOf4 = str => str.length > 4 ? str.substr(0,4) : str
+const maxOf5 = str => str.length > 4 ? str.substr(0,5) : str
 
 export default () => {
   const [letters, setLetters] = useState(['A/T','B','C','D','E','F','G','A','E','S','-ING','N','E','T', 'E', 'D-'])
@@ -46,7 +46,7 @@ export default () => {
 
   const handleChange = event => {
     const index = parseInt(event.target.id)
-    const newWords = letters.map((w,i) => i === index ? maxOf4(onlyLetters(event.target.value.toUpperCase())) : w)
+    const newWords = letters.map((w,i) => i === index ? maxOf5(onlyLetters(event.target.value.toUpperCase())) : w)
     setLetters(newWords)
   }
 

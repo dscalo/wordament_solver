@@ -24,7 +24,7 @@ const Row = styled.div`
 const Input = styled.input`
   width: 100%;
   box-sizing: border-box;
-  font-size: 1.3rem;
+  font-size: 0.7rem;
   background-color: inherit;
   text-align: center;
   border: none;
