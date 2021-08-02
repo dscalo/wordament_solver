@@ -1,8 +1,8 @@
 import React, { useReducer } from 'react'
 import styled from 'styled-components'
 
-import WordBox from './WordBox'
-import WordList from './WordList'
+import WordBox from './components/WordBox'
+import WordList from './components/WordList'
 
 export const WordAppDispatch = React.createContext(null)
 
@@ -37,7 +37,7 @@ const H1 = styled.h1`
   margin-left: 10px;
 `
 
-const WordApp = () => {
+const App = () => {
   const [state, dispatch] = useReducer(reducer, initState)
   return (
     <WordAppDispatch.Provider value={{state, dispatch}}>
@@ -52,4 +52,4 @@ const WordApp = () => {
   )
 }
 
-export default WordApp
+export default App

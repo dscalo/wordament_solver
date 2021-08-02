@@ -1,12 +1,12 @@
 import React, { useMemo, useContext, useState, useEffect } from 'react'
-import { WordAppDispatch } from './WordApp'
+import { WordAppDispatch } from '../App'
 
-import Minimap from './components/Minimap'
-import Checkbox from './components/Checkbox'
+import Minimap from './Minimap'
+import Checkbox from './Checkbox'
 import styled from 'styled-components'
-import { adjacencyList, getWordList } from './utils/graph'
-import { createNode, insert, search } from './utils/trie'
-import words from './SOWPODS.json'
+import { adjacencyList, getWordList } from '../utils/graph'
+import { createNode, insert, search } from '../utils/trie'
+import words from '../SOWPODS.json'
 
 const Container = styled.div`
   margin: 10px;

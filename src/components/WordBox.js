@@ -1,9 +1,9 @@
 import React, { useState, useContext } from 'react'
 import styled from 'styled-components'
-import Tile from './components/Tile'
-import { WordAppDispatch } from './WordApp'
-import { isValid } from './utils/validation'
-import { directionOf } from './utils/functions'
+import Tile from './Tile'
+import { WordAppDispatch } from '../App'
+import { isValid } from '../utils/validation'
+import { directionOf } from '../utils/functions'
 const getDirection = directionOf(4)
 
 const Container = styled.div`

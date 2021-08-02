@@ -5,12 +5,12 @@ const Container = styled.div`
   width: 25px;
   height: 25px;
   border: 1px solid black;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
 `
 
 const Tile = styled.div`
-  flex: 1 0 15%;
+ 
   border: 0.02px black solid;
   background-color: ${props => props.display ? 'red' : '#FFF'};
 `

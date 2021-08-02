@@ -8,6 +8,7 @@ const Arrow = styled.div`
   color: red;
   align-self: ${props => props.align};
   transform: rotate(${props => props.rotate}deg);
+  display: ${props => props.display.toString()}
 `
 
 export default ({ rotate = 0, align = 'auto', display = false }) =>
