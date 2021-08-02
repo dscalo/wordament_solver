@@ -1,1 +1,1 @@
-## Lists all (most) possible words for a given level in the Wordament moble game
+## Lists all (most) possible words for a given level in the Wordament mobile game
