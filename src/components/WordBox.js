@@ -39,6 +39,16 @@ const Button = styled.button`
 const onlyLetters = str => str.replace(/[^a-zA-Z\-/]/g, '')
 const maxOf5 = str => str.length > 4 ? str.substr(0,5) : str
 
+const getTileColor = (highlights, index) => { 
+  const pos = highlights.indexOf(index)
+  if (pos === -1) {
+      return '#FFF'
+  }
+  
+  return pos === 0 ? 'red' : 'lightgreen'
+
+}
+
 export default () => {
   const [letters, setLetters] = useState(['A/T','B','C','D','E','F','G','A','E','S','-ING','N','E','T', 'E', 'D-'])
   //const [words, setWords] = useState(Array(16).fill(''))
@@ -71,7 +81,7 @@ export default () => {
           <Tile key={i}
             id={i}
             value={letters[i]}
-            highlight={highlights.includes(i)}
+            highlight={getTileColor(highlights, i)}
             arrow={highlights.includes(i) ? getDirection(i, highlights[highlights.indexOf(i) + 1]) : -1}
             handleChange={handleChange}
           />)

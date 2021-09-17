@@ -5,7 +5,7 @@ const Arrow = styled.div`
   visibility: ${props => props.display ? '' : 'hidden'};
   text-align: center;
   font-size: .5rem;
-  color: red;
+  color: black;
   align-self: ${props => props.align};
   transform: rotate(${props => props.rotate}deg);
   display: ${props => props.display.toString()}

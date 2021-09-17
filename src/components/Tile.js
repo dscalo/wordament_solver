@@ -7,7 +7,7 @@ const OuterContainer = styled.div`
   flex: 1 0 calc(25% - 10px - 1px);
   box-shadow: 2px 2px 1px 1px black;
   border-radius: 10%;
-  background-color: ${props => props.highlight ? `lightgreen`: `#FFF`};
+  background-color: ${props => props.highlight };
 `
 
 const ArrowContainer = styled.div`
@@ -31,7 +31,7 @@ const Input = styled.input`
   padding: 5px;
 `
 
-export default ({ id, value, handleChange, highlight = false, arrow = -1 }) => (
+export default ({ id, value, handleChange, highlight = '#FFF', arrow = -1 }) => (
   <OuterContainer highlight={highlight} >
    <ArrowContainer>
      <Row>
